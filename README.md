@@ -50,7 +50,7 @@ terraform -version
 
 ## Step 2: Create Terraform Configuration File
 
-Create a file named `ec2.tf` (or any name ending with `.tf`) and add your Terraform configuration inside it.
+Create a file named `ec2.tf` (or any name ending with `.tf`) and add your Terraform configuration inside it(You can refer my ec2.tf file).
 
 Example structure:
 
