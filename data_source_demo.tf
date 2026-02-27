@@ -4,12 +4,12 @@ resource "aws_instance" "name" {
 }
 
 #To fetch data from aws ,which terraform has not created.
-data "aws_ami" "ubuntu" {
+data "aws_ami" "ubuntu-ami" {
     most_recent = true
 
-    owners = ["amazon"]
+    owners = ["099720109477"] # Canonical
     filter {
       name = "name"
-      values = ["ubuntu/images/hvm-ssd/ubuntu-lunar-23.04-arm64-server-20231206"]
+      values = ["ubuntu/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64-server-*"]
     }
 }
